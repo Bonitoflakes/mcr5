@@ -13,7 +13,6 @@ export default function HomePage() {
   const [search, setSearch] = useState({ query: "", filter: "Name" });
   const [showModal, setShowModal] = useState(false);
 
-
   const filteredRecipes = state.recipes.filter((recipe) => {
     switch (search.filter) {
       case "Name":
@@ -48,11 +47,9 @@ export default function HomePage() {
     setShowModal((p) => !p);
   };
 
-
-
   return (
     <div className="m-4 ">
-      {/* <Search search={search} handleFilter={handleFilter} handleQuery={handleQuery} /> */}
+      <Search search={search} handleFilter={handleFilter} handleQuery={handleQuery} />
 
       <h1 className="text-6xl font-bold p-4">All Recipes: </h1>
 
