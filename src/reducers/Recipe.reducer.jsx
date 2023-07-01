@@ -20,6 +20,7 @@ export const RecipeReducer = (state, action) => {
     }
 
     case "add_recipe": {
+      console.log(payload);
       return {
         ...state,
         recipes: [...state.recipes, payload],
