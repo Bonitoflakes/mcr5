@@ -52,7 +52,7 @@ export default function HomePage() {
 
   return (
     <div className="m-4 ">
-      <Search search={search} handleFilter={handleFilter} handleQuery={handleQuery} />
+      {/* <Search search={search} handleFilter={handleFilter} handleQuery={handleQuery} /> */}
 
       <h1 className="text-6xl font-bold p-4">All Recipes: </h1>
 
